@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,7 @@
 </head>
 <body>
     <header>
+        <img id="header-bg" src="static/Decore.png" alt="">
         <nav>
             <div id="nav-box">
                 <img src="static/Jadoo.png" alt="">
@@ -25,6 +26,22 @@
                     <a href="#" id="en">En</a><img src="static/Vector 1.png" alt="">
                 </div>
             </div>
+            <div class="ham-container">
+                <input type="checkbox" name="" id="" class="check">
+                <ul class="menu-items">
+                    <li><a href="https://google.com" target="_blank">Destinations</a></li>
+                    <li><a href="https://google.com" target="_blank">Hotels</a></li>
+                    <li><a href="https://google.com" target="_blank">Flights</a></li>
+                    <li><a href="https://google.com" target="_blank">Bookings</a></li>
+                    <li><a href="https://google.com" target="_blank">Login</a></li>
+                    <li><a href="https://google.com" target="_blank">Signup</a></li>
+                  </ul>
+                <div class="ham-menu">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+            </div>
         </nav>
 
         <div id="poster">
@@ -35,8 +52,11 @@
                 </div>
                 <p id="poster-text">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
                 <div id="poster-btn">
-                    <span id="find-out-btn">Find out more</span>
-                    <span id="find-out-btn">Play Demo</span>
+                    <button id="find-out-btn">Find out more</button>
+                    <div id="play">
+                        <img src="static/header/Play button.png" alt="">
+                        <span id="play-btn">Play Demo</span>
+                    </div>
                 </div>
             </div>
             <div id="poster-img">
@@ -54,28 +74,31 @@
             </div>
             <div id="service-card-box">
                 <div class="service-card">
-                    <img src="" alt="about to come">
+                    <img src="static/services/Group 48.png" alt="about to come">
                     <div class="service-card-heading">
                         <h3>Calculated Weather </h3>
                         <span>Built Wicket longer admire do barton vanity itself do in it.</span>
                     </div>
                 </div>
                 <div class="service-card">
-                    <img src="" alt="about to come">
-                    <div class="service-card-heading">
-                        <h3>Best Flights</h3>
-                        <span>Engrossed listening. Park gate sell they west hard for the.</span>
+                    <img id="service-plain-img" src="static/services/Group 51.png" alt="about to come">
+                    <div class="service-card-heading" id="service-plain-heading">
+                        <div class="active-service">
+                            <h3>Best Flights</h3>
+                            <span>Engrossed listening. Park gate sell they west hard for the.</span>
+                        </div>
                     </div>
+                    <div id="active-service"></div>
                 </div>
                 <div class="service-card">
-                    <img src="" alt="about to come">
+                    <img src="static/services/Group 50.png" alt="about to come">
                     <div class="service-card-heading">
                         <h3>Local Events</h3>
                         <span>Barton vanity itself do in it. Preferd to men it engrossed listening. </span>
                     </div>
                 </div>
                 <div class="service-card">
-                    <img src="" alt="about to come">
+                    <img src="static/services/Group 49.png" alt="about to come">
                     <div class="service-card-heading">
                         <h3>Customization</h3>
                         <span>We deliver outsourced aviation services for military customers</span>
@@ -96,19 +119,19 @@
                 <div class="destination-card-box" id="destination-card-1">
                     <div class="destination-content">
                         <p class="destination-info"><span class="destination-loc-price">Rome, Italy</span><span class="destination-loc-price">$5,42k</span></p>
-                        <p class="destination-time">10 Days Trip</p>
+                        <img src="static/destination/navigation 1.png" alt=""><span class="destination-time">10 Days Trip</span>
                     </div>
                 </div>
                 <div class="destination-card-box" id="destination-card-2">
                     <div class="destination-content">
                         <p class="destination-info"><span class="destination-loc-price">Rome, Italy</span><span class="destination-loc-price">$5,42k</span></p>
-                        <p class="destination-time">10 Days Trip</p>
+                        <img src="static/destination/navigation 1.png" alt=""><span class="destination-time">10 Days Trip</span>
                     </div>
                 </div>
                 <div class="destination-card-box" id="destination-card-3">
                     <div class="destination-content">
                         <p class="destination-info"><span class="destination-loc-price">Rome, Italy</span><span class="destination-loc-price">$5,42k</span></p>
-                        <p class="destination-time">10 Days Trip</p>
+                        <img src="static/destination/navigation 1.png" alt=""><span class="destination-time">10 Days Trip</span>
                     </div>
                 </div>
             </div>
@@ -125,17 +148,53 @@
                 </div>
                 <div id="booktrip-points">
                     <div class="booktrip-point">
-                        <h3>Choose Destination</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                        <img src="static/booktrip/Group 7.svg" alt="">
+                        <div class="booktrip-text">
+                            <h3>Choose Destination</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                        </div>
                     </div>
                     <div class="booktrip-point">
-                        <h3>Make Payment</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                        <img src="static/booktrip/Group 12.svg" alt="">
+                        <div class="booktrip-text">
+                            <h3>Make Payment</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                        </div>
                     </div>
                     <div class="booktrip-point">
-                        <h3>Reach Airport on Selected Date</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                        <img src="static/booktrip/Group 11.svg" alt="">
+                        <div class="booktrip-text">
+                            <h3>Reach Airport on Selected Date</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="booktrip-right">
+                <div id="booktrip-right-img">
+                    <img src="static/booktrip/Rectangle 17.jpg" alt="">
+                </div>
+                <h3 id="trip-greece">Trip To Greece</h3>
+                <p class="trip-info"><span>14-29 June</span> | <span>by Robbin joseph</span></p>
+                <div class="trip-icons">
+                    <img src="static/booktrip/LEAF.png" alt="">
+                    <img src="static/booktrip/map icon.png" alt="">
+                    <img src="static/booktrip/send.png" alt="">
+                </div>
+                <div class="trip-icons">
+                    <img src="static/booktrip/building 1.svg" alt="">
+                    <p class="trip-info">24 people going</p>
+                </div>
+                <div id="trip-rome">
+                    <div id="rome-trip-content">
+                        <img src="static/booktrip/Mask Group.png" alt="">
+                        <div id="rome-trip-text">
+                            <p id="rome-trip-ongoing">Ongoing</p>
+                            <h3 id="rome-trip-to">Trip to rome</h3>
+                        </div>
+                    </div>
+                    <p id="rome-completed"><span>40% </span> completed</p>
+                    <img id="rome-bar" src="static/booktrip/Group 3.svg" alt="">
                 </div>
             </div>
         </div>
